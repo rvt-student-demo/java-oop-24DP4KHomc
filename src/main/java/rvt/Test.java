@@ -15,6 +15,7 @@ public class Test {
                 // Izlasit vienu rindu
                 String row = scanner.nextLine();
                 String[] parts = row.split(",");
+                
 
                 System.out.println("Name: " + parts[0]);
                 System.out.println("Age: " + parts[1]);
@@ -26,4 +27,4 @@ public class Test {
             System.out.println("Error: " + e.getMessage());
         }
     }
-}
+} 
