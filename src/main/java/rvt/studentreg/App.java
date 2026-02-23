@@ -41,7 +41,7 @@ public class App {
                 }
 
             // Lietotaja ievades kludas (piem., slikts epasts)
-            } catch (IevadesKlauda e) {
+            } catch (IevadesKluda e) {
                 System.out.println("Klauda: " + e.getMessage());
 
             // Citas negaiditas sistemas kludas
@@ -112,7 +112,7 @@ public class App {
         // Atrod esošo studentu
         Students esosais = registrs.atrastPecPersonasKoda(personasKods.trim());
         if (esosais == null)
-            throw new IevadesKlauda("Students ar so personas kodu nav atrasts.");
+            throw new IevadesKluda("Students ar so personas kodu nav atrasts.");
 
         System.out.println("Atstaj tuksu, lai nemainitu lauku.");
 
@@ -175,7 +175,7 @@ public class App {
             try {
                 parbaude.izpildit(ievade);
                 return ievade;
-            } catch (IevadesKlauda e) {
+            } catch (IevadesKluda e) {
                 System.out.println("Klauda: " + e.getMessage());
             }
         }

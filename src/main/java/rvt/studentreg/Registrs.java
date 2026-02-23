@@ -21,11 +21,11 @@ public class Registrs {
 
         boolean epastsAiznemts = visi.stream()
                 .anyMatch(s -> s.getEpasts().equalsIgnoreCase(students.getEpasts()));
-        if (epastsAiznemts) throw new IevadesKlauda("Epasts aiznemts.");
+        if (epastsAiznemts) throw new IevadesKluda("Epasts aiznemts.");
 
         boolean pkEksiste = visi.stream()
                 .anyMatch(s -> s.getPersonasKods().equals(students.getPersonasKods()));
-        if (pkEksiste) throw new IevadesKlauda("Personas kods eksiste.");
+        if (pkEksiste) throw new IevadesKluda("Personas kods eksiste.");
 
         visi.add(students);
         faili.saglabatVisus(visi);
@@ -68,7 +68,7 @@ public class Registrs {
                 .orElse(null);
 
         if (esosais == null)
-            throw new IevadesKlauda("Students ar so personas kodu nav atrasts.");
+            throw new IevadesKluda("Students ar so personas kodu nav atrasts.");
 
         // pārbauda, vai jaunais epasts nav aizņemts citam
         boolean epastsAiznemtsCitam = visi.stream().anyMatch(s ->
@@ -76,7 +76,7 @@ public class Registrs {
                 s.getEpasts().equalsIgnoreCase(atjauninats.getEpasts())
         );
         if (epastsAiznemtsCitam)
-            throw new IevadesKlauda("Epasts aiznemts citam studentam.");
+            throw new IevadesKluda("Epasts aiznemts citam studentam.");
 
         esosais.setVards(atjauninats.getVards());
         esosais.setUzvards(atjauninats.getUzvards());

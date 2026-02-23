@@ -20,34 +20,34 @@ public class Validatori {
  
     public static void parbaudiVardu(String vards) {
         if (vards == null || vards.trim().isEmpty())
-            throw new IevadesKlauda("Vards nedrikst but tukss.");
+            throw new IevadesKluda("Vards nedrikst but tukss.");
 
         if (!VARDS_UZVARDS.matcher(vards.trim()).matches())
-            throw new IevadesKlauda("Vards: tikai burti, min 3 simboli.");
+            throw new IevadesKluda("Vards: tikai burti, min 3 simboli.");
     }
 
     public static void parbaudiUzvardu(String uzvards) {
         if (uzvards == null || uzvards.trim().isEmpty())
-            throw new IevadesKlauda("Uzvards nedrikst but tukss.");
+            throw new IevadesKluda("Uzvards nedrikst but tukss.");
 
         if (!VARDS_UZVARDS.matcher(uzvards.trim()).matches())
-            throw new IevadesKlauda("Uzvards: tikai burti, min 3 simboli.");
+            throw new IevadesKluda("Uzvards: tikai burti, min 3 simboli.");
     }
 
     public static void parbaudiEpastu(String epasts) {
         if (epasts == null || epasts.trim().isEmpty())
-            throw new IevadesKlauda("Epasts nedrikst but tukss.");
+            throw new IevadesKluda("Epasts nedrikst but tukss.");
 
         if (!EPASTS.matcher(epasts.trim()).matches())
-            throw new IevadesKlauda("Nederigs epasta formats.");
+            throw new IevadesKluda("Nederigs epasta formats.");
     }
 
     public static void parbaudiPersonasKodu(String personasKods) {
         if (personasKods == null || personasKods.trim().isEmpty())
-            throw new IevadesKlauda("Personas kods nedrikst but tukss.");
+            throw new IevadesKluda("Personas kods nedrikst but tukss.");
 
         if (!PERSONAS_KODS.matcher(personasKods.trim()).matches())
-            throw new IevadesKlauda(
+            throw new IevadesKluda(
                     "Nederigs personas koda formats. Piemers: 010101-12345");
     }
 }
