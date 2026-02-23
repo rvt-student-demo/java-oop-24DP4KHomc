@@ -39,6 +39,7 @@ public class FailuApstrade {
         }
     }
 
+    
     // Nolasa visus studentus no CSV
     public List<Students> nolasitVisus() {
         List<Students> saraksts = new ArrayList<>();

@@ -164,6 +164,7 @@ public class App {
         void izpildit(String v);
     }
 
+    
     // Prasa ievadi un atkarto, lidz validacija iziet veiksmigi
     private static String prasitUnParbaudit(
             Scanner skeneris,
