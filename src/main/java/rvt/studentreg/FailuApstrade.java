@@ -17,7 +17,7 @@ public class FailuApstrade {
 
     private final Path csvCels;
 
-    public FailuApstrade(String fails) {
+    public FailuApstrade(String fails) { 
         this.csvCels = Paths.get(fails);
         nodrosiniFailu();
     }

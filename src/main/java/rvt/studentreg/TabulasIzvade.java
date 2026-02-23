@@ -26,7 +26,7 @@ public class TabulasIzvade {
                         s.getRegistresanasDatumsLaiks()
                 }, platumi);
             }
-        }
+        } 
 
         linija(platumi);
     }

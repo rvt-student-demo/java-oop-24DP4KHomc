@@ -6,4 +6,4 @@ public class IevadesKlauda extends RuntimeException {
     public IevadesKlauda(String zinjojums) {
         super(zinjojums);
     }
-}
+} 

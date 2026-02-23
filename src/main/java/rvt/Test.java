@@ -7,12 +7,12 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(Paths.get("data/data.csv"))) {
-            // Ignore header row
+            // Ignoret galveni
             scanner.nextLine();
 
-            // Read the file until all lines have been read
+            // Lasīt failu, līdz ir nolasītas visas rindas
             while (scanner.hasNextLine()) {
-                // Read one line
+                // Izlasit vienu rindu
                 String row = scanner.nextLine();
                 String[] parts = row.split(",");
 

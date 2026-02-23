@@ -14,7 +14,7 @@ public class Students {
                     String personasKods, String registresanasDatumsLaiks) {
         this.vards = vards;
         this.uzvards = uzvards;
-        this.epasts = epasts;
+        this.epasts = epasts; 
         this.personasKods = personasKods;
         this.registresanasDatumsLaiks = registresanasDatumsLaiks;
     }

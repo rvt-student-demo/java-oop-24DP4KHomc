@@ -17,7 +17,7 @@ public class Validatori {
     // RegEx personas kodam: 010101-12345
     private static final Pattern PERSONAS_KODS =
             Pattern.compile("^\\d{6}-\\d{5}$");
-
+ 
     public static void parbaudiVardu(String vards) {
         if (vards == null || vards.trim().isEmpty())
             throw new IevadesKlauda("Vards nedrikst but tukss.");

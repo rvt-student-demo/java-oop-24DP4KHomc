@@ -13,7 +13,7 @@ public class Registrs {
 
     public Registrs(FailuApstrade faili) {
         this.faili = faili;
-    }
+    } 
 
     // Pievieno jaunu studentu (ar unikālo lauku pārbaudi)
     public void registreStudentu(Students students) {

@@ -24,7 +24,7 @@ public class App {
         // Bezgaligs cikls, lai programma stradatu lidz lietotajs izvelas exit
         while (true) {
             System.out.print("\nIevadi komandu (register/show/remove/edit/exit): ");
-            String komanda = skeneris.nextLine().trim().toLowerCase();
+            String komanda = skeneris.nextLine().trim().toLowerCase(); 
 
             try {
                 // Izvelas darbibu pec lietotaja komandas
