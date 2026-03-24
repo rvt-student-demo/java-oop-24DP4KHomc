@@ -33,7 +33,7 @@ public class Store {
             }
         }
 
-        System.out.println("your shoppingcart contents:");
+        System.out.println("your shopping cart contents:");
         cart.print();
         System.out.println("total: " + cart.price());
     }
